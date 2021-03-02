@@ -1,0 +1,45 @@
+body {
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.left {
+    width: 30%;
+    height: 520px;
+    background-color: #f3d083;
+    padding-left: 30px;   
+}
+
+main .right {
+    margin: 50px auto;
+} 
+
+.main .left img {
+    width: 100%;
+}
+
+.right {
+    background-color: white;
+}
+
+.firstleft {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.dribble {
+    display: flex;
+}
+
+.inputs {
+    display: flex;
+}
+
+.privacy {
+    margin-top: 100px;
+    font-size: 10px;
+}
