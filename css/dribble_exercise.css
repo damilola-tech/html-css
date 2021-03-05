@@ -1,5 +1,6 @@
 body {
     width: 100%;
+    background: linear-gradient(90deg, rgba(238, 199, 150, 1) 0%, rgba(215, 151, 223, 1) 100%);
 }
 
 .main {
