@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+
+    <style>
+        body {
+            background: white;
+            height: fit-content;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .heading input {
+            height: 30px;
+            border-radius: 10px;
+            border: white;
+        }
+
+        .heading h3 {
+            font-size: 30px;
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        .heading input {
+            font: white;
+            border-bottom:2px solid gainsboro;
+            border-radius: 10px;
+            
+        }
+
+        .heading svg {
+            height: 15px;
+            width: 10px;
+            padding-left: 10px;
+        }
+
+        .navbar ul {
+            text-decoration: none;
+            list-style: none;
+        }
+        .navbar {
+                list-style: none;
+                margin: 0;
+                padding: 0;  
+                border-radius: 5px;
+                overflow: auto;
+                position: sticky;
+            }
+
+            .navbar li {
+                float: left;
+            }
+
+            .navbar li a {
+                color: black;
+                display: block;
+                text-decoration: none;
+                padding: 10px 15px;
+            }
+
+            .first_line {
+                display: flex;
+                padding: 50px 30px;
+                margin-bottom: 60px;
+            }
+
+            .editor {
+                padding: 40px 50px;
+                background:whitesmoke;
+                line-height: 20px;
+                font-family:Arial, Helvetica, sans-serif;
+
+            }
+
+            .editor h3 {
+                font-size: 10px;
+            }
+
+            .container {
+                width: 80%;
+            }
+
+            .container .second_page2 {
+                width: 40%;
+                margin-right: 50px;
+                margin-left: 40px;
+            }
+
+            .container .second_page1 {
+                width: 40%;
+                margin-right:  20px;
+
+            }
+
+            .container .second_page3 {
+                width: 40%;
+            }
+
+            .container h3 {
+                font-size: 25px;
+            }
+            
+            .container {
+                display: flex;
+                margin: 80px 20px;
+            }
+
+            .second_page2 .pg_1 {
+                display: flex;
+                justify-content: space-between;
+            }
+            .second_page2 .pg_2 {
+                display: flex;
+                justify-content: space-between;
+            }
+            .second_page2 .pg_3 {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .pg_3 .twos {
+                padding-left: 20px;
+            }
+            .pg_3 .threes {
+                padding-left: 20px;
+            }
+            .pg_3 .ones {
+                padding-right: 20px;
+            }
+
+            .figure .one {
+                display: flex;
+                justify-content: space-between;
+            }
+        
+            .figure .two {
+                display: flex;
+                justify-content: space-between;
+            }
+        
+            .figure .three {
+                display: flex;
+                justify-content: space-between;
+            }
+            .figure .four {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .third_page {
+                display: flex;
+                margin: 120px 40px;
+            }
+
+            .third_page .third_page_one {
+                padding-left: 50px;
+            }
+
+            .fourth_page {
+                display: flex;
+                padding: 80px 40px;
+                width: 90%;
+            }
+
+            .fourth_pageA {
+                width: 45%;
+            }
+            .fourth_pageB {
+                width: 45%;
+                justify-content: space-between;
+            }
+
+            .fourth_pageA .fourth_pageA_one {
+                display: flex;
+                justify-content: space-between;
+
+            }
+            .fourth_pageA .fourth_pageA_two {
+                display: flex;
+                justify-content: space-between;
+
+            }
+            .fourth_pageA .fourth_pageA_three {
+                display: flex;
+                justify-content: space-between;
+            }
+            .fourth_pageB .fourth_pageB_one {
+                display: flex;
+                justify-content: space-between;
+
+            }
+            .fourth_pageB .fourth_pageB_two {
+                display: flex;
+                justify-content: space-between;
+
+            }
+            .fourth_pageB .fourth_pageB_three {
+                display: flex;
+                justify-content: space-between;
+            }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h3>Meranda</h3>
+        <div class="svg">
+            <!-- facebook icon-->
+            <i class="fab fa-facebook-f"></i>
+            <!-- Or use the svg directly without first doing the import in the head up there... as in below -->
+            <!-- <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg> -->
+            
+            <!-- Twitter icon -->
+            <i class="fab fa-twitter"></i>
+            <!-- <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg> -->
+            
+            <!-- instagram -->
+            <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-instagram fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+            
+            <!-- <button class="btn" wi>Search..</button> -->
+            <input type="text" name="#" id="#" placeholder="Search..">
+            <!-- Search -->
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">CATEGORIES</a></li>
+            <li><a href="#">POLITICS</a></li>
+            <li><a href="#">BUSINESS</a></li>
+            <li><a href="#">HEALTH</a></li>
+            <li><a href="#">DESIGN</a></li>
+            <li><a href="#">SPORT</a></li>
+            <li><a href="#">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <div class= "first_line">
+    
+        <img src="../img/cook_img_1.jpg" alt="My image" width="800px" height="450px">
+        
+        <div class="editor">
+            <p>EDITOR'S PICK</p>
+            <h3>News Needs to Meet Its</h3>
+            <h3>Audiences Where They Are</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, dolorum quas fuga deleniti 
+            cumque quaerat repellendus inventore, quis iusto hic vitae iste! Magnam magni tenetur amet? 
+            Pariatur cum id nonl Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil quo quisquam
+            tenetur eius perspiciatis aliquid unde animi harum, corporis voluptatum</p>
+            <p><b>Dave Rogers in Food</b></p>
+            <p>jan-14 . 3 min read *</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="second_pg1">
+            <img src="../img/look_girl_h_1.jpg" alt="">
+            <h3>New Needs to Meet Its Audiences Where</h3>
+            <h3>They Are</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis </p>
+            <p>dolor sit amet consectetur adipisicing elit. Impedit debitis </p>
+            <p>ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis </p>
+            <p><b>Dave Rogers in News</b></p>
+        </div>
+        <div class="second_page2">
+            <div class="pg_1">
+                <img src="../img/img_girl_2.jpg" alt="#" width="250px" height="200px">
+                <div class="ones">
+                    <h3>New Needs to Meet Its Audiences Where</h3>
+                    <h3>They Are</h3>
+                    <p><b>Dave Rogers in News</b></p>
+                </div>
+            </div>
+            <div class="pg_2">
+                <img src="../img/cook_img_1.jpg" alt="img" width="180px" height="200px">
+                <div class="twos">
+                    <h3>New Needs to Meet Its Audiences Where</h3><br>
+                    <h3>They Are</h3>
+                    <p><b>Dave Rogers in News</b></p>
+                </div>
+            </div>
+            <div class="pg_3">
+                <img src="../img/look_girl_h_1.jpg" alt="#" width="200px" height="200px">
+                <div class="threes">
+                    <h3>New Needs to Meet Its Audiences Where</h3>
+                    <h3>They Are</h3>
+                    <p><b>Dave Rogers in News</b></p>
+                </div>
+            </div>
+        </div>
+        <div class="figure">
+            <div class="one">
+                <h2>01</h2>
+                <div>
+                    <h3>New Needs to Meet Its Audiences Where</h3>
+                    <h3>They Are</h3>
+                    <p><b>Dave Rogers in News</b></p>
+                </div>
+            </div>
+            <div class="two">
+                <h2>02</h2>
+                <div>
+                    <h3>New Needs to Meet Its Audiences Where</h3>
+                    <h3>They Are</h3>
+                    <p><b>Dave Rogers in News</b></p>
+                </div>
+            </div>
+            <div class="three">
+                <h2>03</h2>
+                <div>
+                    <h3>New Needs to Meet Its Audiences Where</h3>
+                    <h3>They Are</h3>
+                    <p><b>Dave Rogers in News</b></p>
+                </div>
+            </div>
+            <div class="four">
+                <h2>04</h2>
+                <div>
+                    <h3>New Needs to Meet Its Audiences Where</h3>
+                    <h3>They Are</h3>
+                    <p><b>Dave Rogers in News</b></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="third_page">
+        <img src="../img/cook_img_1.jpg" alt="#" width="800px" height="450px">
+        <div class="third_page_one">
+            <p>EDITOR'S PICK</p>
+            <h3>News Needs to Meet Its</h3>
+            <h3>Audiences Where They Are</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, dolorum quas fuga deleniti 
+            cumque quaerat repellendus inventore, quis iusto hic vitae iste! Magnam magni tenetur amet? 
+            Pariatur cum id nonl Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil quo quisquam
+            tenetur eius perspiciatis aliquid unde animi harum, corporis voluptatum</p>
+            <p><b>Dave Rogers in Food</b></p>
+            <p>jan-14 . 3 min read *</p>
+        </div>
+    </div>
+
+    <div class="fourth_page">
+        <div class="fourth_pageA">
+            <div class="fourth_pageA_one">
+                <img src="../img/look_girl_h_1.jpg" alt="#" width="200px" height="200px">
+                <div>
+                    <h3>New Needs to Meet Its Audiences Where</h3>
+                    <h3>They Are</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis </p>
+                    <p>dolor sit amet consectetur adipisicing elit. Impedit debitis </p>
+                    <p>ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis </p>
+                    <p><b>Dave Rogers in News</b></p>
+                </div>
+            </div>
+            <div class="fourth_pageA_two">
+                <img src="../img/img_girl_2.jpg" alt="#" width="200px" height="200px">
+                <div>
+                    <h3>New Needs to Meet Its Audiences Where</h3>
+                    <h3>They Are</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis </p>
+                    <p>dolor sit amet consectetur adipisicing elit. Impedit debitis </p>
+                    <p>ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis </p>
+                    <p><b>Dave Rogers in News</b></p>
+                </div>
+            </div>
+            <div class="fourth_pageA_three">
+                <img src="../img/cook_img_1.jpg" alt="img" width="200px" height="200px"" alt="#">
+                <div>
+                    <h3>New Needs to Meet Its Audiences Where</h3>
+                    <h3>They Are</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis </p>
+                    <p>dolor sit amet consectetur adipisicing elit. Impedit debitis </p>
+                    <p>ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis </p>
+                    <p><b>Dave Rogers in News</b></p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="fourth_pageB">
+            <div class="fourth_pageB_one">
+                <img src="../img/look_girl_h_1.jpg" alt="#" width="200px" height="200px">
+                <div>
+                <h3>New Needs to Meet Its Audiences Where</h3>
+                <h3>They Are</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis </p>
+                <p>dolor sit amet consectetur adipisicing elit. Impedit debitis </p>
+                <p>ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis </p>
+                <p><b>Dave Rogers in News</b></p>
+                </div>
+            </div>
+            <div class="fourth_pageB_two">
+                <img src="../img/img_girl_2.jpg" alt="#" width="200px" height="200px">
+                <div>
+                <h3>New Needs to Meet Its Audiences Where</h3>
+                <h3>They Are</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis </p>
+                <p>dolor sit amet consectetur adipisicing elit. Impedit debitis </p>
+                <p>ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis </p>
+                <p><b>Dave Rogers in News</b></p>
+                </div>
+            </div>
+            <div class="fourth_pageB_three">
+                <img src="../img/cook_img_1.jpg" alt="img" width="200px" height="200px"" alt="#">
+                <div>
+                <h3>New Needs to Meet Its Audiences Where</h3>
+                <h3>They Are</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis </p>
+                <p>dolor sit amet consectetur adipisicing elit. Impedit debitis </p>
+                <p>ipsum dolor sit amet consectetur adipisicing elit. Impedit debitis </p>
+                <p><b>Dave Rogers in News</b></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
