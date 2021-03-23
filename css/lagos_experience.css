@@ -1,0 +1,44 @@
+.container {
+    /* Gives the background-image shape */
+    clip-path: polygon(1% 0, 100% 1%, 100% 78%, 0 96%);
+    /* background-image: url(../img/dami.jpg); */
+    background: linear-gradient(to right bottom, rgba(126, 213, 111, 0.7), rgba(40, 180, 133, 0.7)), url(../img/images/hero.jpg) no-repeat center center/cover;
+    width: 100%;
+    /* Height of background image: 100vertical height */
+    height: 100vh;
+    opacity: 80%;
+    text-align: center;
+}
+
+.intro {
+    color: aliceblue;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom: 80px;
+}
+
+.intro_main {
+    font-size: 50px;
+    letter-spacing: 40px;
+}
+
+.intro_sub {
+    font-size: 20px;
+    letter-spacing:20px;
+}
+
+.btn {
+    width: 100px;
+    background-color: aliceblue;
+    border-radius: 30px;
+    text-decoration: none;
+    height: 200px;
+    text-align: center;   
+    padding: 20px 30px;
+    color: black;
+}
+
+.image1 {
+    text-align: left;
+}
+
+
